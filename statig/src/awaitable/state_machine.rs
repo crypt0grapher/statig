@@ -48,6 +48,7 @@ pub struct StateMachine<M>
 where
     M: IntoStateMachine,
 {
+    //opening inner to allow for modification of the parent struct
     pub inner: Inner<M>,
     initialized: bool,
 }
