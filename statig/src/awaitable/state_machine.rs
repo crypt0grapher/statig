@@ -48,7 +48,7 @@ pub struct StateMachine<M>
 where
     M: IntoStateMachine,
 {
-    inner: Inner<M>,
+    pub inner: Inner<M>,
     initialized: bool,
 }
 
