@@ -243,7 +243,7 @@ pub struct InitializedStateMachine<M>
 where
     M: IntoStateMachine,
 {
-    inner: Inner<M>,
+    pub inner: Inner<M>,
 }
 
 impl<M> InitializedStateMachine<M>
